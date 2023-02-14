@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    
+  }
+  
+  html,
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    background-color: white;
+  }
+  .table>thead>tr>th{
+      color: black;
+  }
+  .table>tbody>tr>td{
+      color: black;
+  }
+  .content {
+    z-index: -1;
+    margin-top: 3rem;
+    width: 330px;
+    background: #dde1e7;
+    border-radius: 10px;
+    padding: 40px 30px;
+    box-shadow: -3px -3px 7px #132d8c73, 2px 2px 5px rgba(104, 155, 243, 0.288);
+    backdrop-filter: blur(0px);
+    background-color: rgba(255, 255, 255, 0);
+  
+    box-shadow: rgba(29, 24, 155, 0.3) 2px 8px 8px;
+  }
+  .heading {
+    text-align: center;
+    font-size: 2.75rem;
+    margin-bottom: 1em;
+  }
+  
+  .form-section {
+    min-height: 95vh;
+    display: grid;
+    place-content: center;
+  }
+  
+  .input-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 2em 0 0.5em;
+  }
+  
+  .label {
+    font-family: 'Roboto';
+    letter-spacing: 0.25px;
+    font-weight: 500;
+    font-size: 1.35rem;
+    color: #000;
+    margin-bottom: 0.35em;
+  }
+  
+  .requiredLabel {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .input {
+    padding: 1.35em 1em;
+    width: 350px;
+    background-color: #fff;
+    outline: none;
+    border: 1px solid rgb(130, 130, 130);
+    border-radius: 0.25em;
+  }
+  
+  .warning-message {
+    color: #ff0000;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  .wrong-input {
+    border: 2px solid #ff0000;
+    color: #ff0000;
+  }
+  
+  .correct-input {
+    border: 2px solid #03bb56;
+    color: #03bb56;
+  }
+  
+  .submit-button-wrapper {
+    display: flex;
+  }
+  
+  .float {
+    justify-content: flex-end;
+  }
+  
+  .submit-button {
+    margin-top: 1.75rem;
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 0.5px;
+    padding: 0.85em 2.2em;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 4px;
+  }
+  
+  .button-success {
+    color: white;
+    background-color: #03bb56;
+  }
