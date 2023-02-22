@@ -10,7 +10,7 @@ const Show = ({data}) => {
     const [btn,setBtn]=useState("green")
 
 const fetchdata = async () => {
-    const url = "http://127.0.0.1:8000/api/get-all/";
+    const url = "https://wce-attendance.up.railway.app/api/get-all/";
     console.log(data.date);
     const send = {
         date:data.date,
