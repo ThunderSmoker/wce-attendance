@@ -37,7 +37,15 @@
     font-size: 2.75rem;
     margin-bottom: 1em;
   }
-  
+  .focus{
+    backdrop-filter: blur(0px);
+    -webkit-transform: scale(0.2, 0.2);
+    transform: scale(0.2, 0.2);
+    padding: 0.2em 0em;
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    border: 1.8px solid rgb(0, 0, 0);
+  } 
   .form-section {
     min-height: 95vh;
     display: grid;

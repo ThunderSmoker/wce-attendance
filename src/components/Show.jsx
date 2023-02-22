@@ -7,10 +7,10 @@ import {AiFillCheckCircle} from 'react-icons/ai'
 import {ImCross} from 'react-icons/im'
 const Show = ({data}) => {
     const [students,setStudents]=useState([])
-
+    const [btn,setBtn]=useState("green")
 
 const fetchdata = async () => {
-    const url = "https://wce-attendance.up.railway.app/api/get-all/";
+    const url = "http://127.0.0.1:8000/api/get-all/";
     console.log(data.date);
     const send = {
         date:data.date,
@@ -46,13 +46,16 @@ const fetchdata = async () => {
       {students.map((student) => {
         console.log("hello");
         const { prn , present} = student;
+        if(present==false){
+          setBtn("red")
+        }
         console.log(prn);
         return (
           <tr>
-          <td>{prn}</td>
-          <td><button  style={{fontSize:"1rem",color:"white"}}onClick={()=>handlePresent(prn)}>
+          <td><h4 style={{marginTop:"0.3rem"}}>{prn.substr(0,8)}</h4></td>
+          <td><div  style={{fontSize:"2rem",color:btn}}>
               {present?<AiFillCheckCircle/>:<ImCross/>}
-            </button></td>
+            </div></td>
 
         </tr>
         );

@@ -3,7 +3,6 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import Home from './components/Home'
-import Batch from './components/Batch'
 import Attendance from './components/Attendance'
 import Show from './components/Show'
 

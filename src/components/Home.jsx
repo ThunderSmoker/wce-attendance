@@ -54,6 +54,7 @@ const Home = ({setdata}) => {
             type="date"
             placeholder="Date"
             name="user-id"
+            color="black"
             value={metaId}
             onChange={(e) => setMetdaId(e.target.value)}
             autoComplete
@@ -100,12 +101,12 @@ const Home = ({setdata}) => {
           </select>
         </div>
         <div>
-        <button id='btn' style={{marginTop:"1rem"}} onClick={handleSubmit}>Submit</button>
+        <button id='btn' style={{marginTop:"1rem",color:"white"}} onClick={handleSubmit}>Submit</button>
 
         </div>
         <div>
 
-        <button  id='btn1'  style={{marginTop:"1rem"}} onClick={handleShow}>Show Attendance</button>
+        <button  id='btn1'  style={{marginTop:"1rem",color:"white"}} onClick={handleShow}>Show Attendance</button>
         </div>
       </form>
     </div>
